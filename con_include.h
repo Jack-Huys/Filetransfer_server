@@ -15,8 +15,10 @@
 #include <pthread.h>
 
 #include <iostream>
+#include <fstream>
 
 #define DEFAULT_AVR_PORT  8181
 #define FILE_MAX_LEN  64
+#define MAX_SIZE 1024
 
 #endif //CON_INCLUDE_H
