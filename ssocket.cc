@@ -30,6 +30,7 @@ ssocket::ServerSocket::ServerSocket(int port,const char* ip):m_Port(port),m_Ip(i
 void ssocket::ServerSocket::socket_bind(){
     int ret = ::bind(sock_fd, (struct sockaddr*)&m_Addr, sizeof(struct sockaddr));
     if(ret == -1){
+        perror("bind");
         std::cout <<"bind error in file <" << __FILE__   
                     <<" >" << "at" <<__LINE__ <<std::endl;
         exit(-1);

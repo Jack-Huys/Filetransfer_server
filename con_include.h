@@ -13,11 +13,14 @@
 #include <stdlib.h>
 #include <string.h>
 #include <pthread.h>
+#include <dirent.h>
+
 
 #include <iostream>
 #include <fstream>
 
 #define DEFAULT_AVR_PORT  8181
+#define SERVER_IP   "172.17.3.232"
 #define FILE_MAX_LEN  64
 #define MAX_SIZE 1024
 
